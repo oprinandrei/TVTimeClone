@@ -1,0 +1,13 @@
+.Season {
+    border : solid 1px black;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    margin:auto;
+    width: 50%;
+
+}
+
+.FontAwesomeSize{
+    margin-left: 10px;
+}

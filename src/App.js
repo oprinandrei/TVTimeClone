@@ -5,7 +5,9 @@ import Stats from './components/Stats/Stats';
 
 function App() {
   return (
-    <Stats />
+    <div className="App">
+      <Stats />
+    </div>
   );
 }
 
