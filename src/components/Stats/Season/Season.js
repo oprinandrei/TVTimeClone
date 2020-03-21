@@ -1,5 +1,5 @@
 import React from "react";
-import Episode from "././Episode/Episode.js";
+import Episode from "../Episode/Episode";
 
 const season = (props) => {
     return <div className="Season">
