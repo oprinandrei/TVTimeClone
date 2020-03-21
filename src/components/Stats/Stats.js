@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-
 import Serial from './Serial/Serial';
 
 class Stats extends Component {
@@ -109,13 +108,22 @@ class Stats extends Component {
           }
         ]
       }
-    ]
+    ],
+    toExpand : false
   }
+
+  ExpandHandler = () => {
+    const expand = this.state.toExpand
+    this.setState ({
+      toExpand : !expand
+    })
+  }
+
   render() {
     return (
       <div className="Container">
-        {this.state.tvSeries.map(serial => {
-          return <Serial serial={serial}/>
+        {this.state.tvSeries.map((serial) => {
+          return <Serial serial={serial} expand={this.state.toExpand} click={() => this.ExpandHandler()} key={serial.uuid}/>
         })}
       </div>
     );
